@@ -138,9 +138,18 @@ class BlackScholes:
     
 #Sidebar for user inputs
 with st.sidebar:
-    st.write(" Created by: Jonathan Napoles")
+    st.write("Created by: Jonathan Napoles")
     linkedin_url = "https://www.linkedin.com/in/jonathannapoles777/"
-    st.markdown(f''' <a href={linkedin_url}><button style="background-color: #0a66c2;">LinkedIn</button></a> ''', unsafe_allow_html=True)
+    st.markdown(
+        f'''
+        <a href="{linkedin_url}" target="_blank" style="text-decoration: none;">
+            <button style="background-color: #0a66c2; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+                LinkedIn
+            </button>
+        </a>
+        ''',
+        unsafe_allow_html=True
+    )
     st.markdown("---")
     
     st.title("Parameters")
